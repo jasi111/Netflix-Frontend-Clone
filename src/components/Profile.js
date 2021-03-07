@@ -12,6 +12,7 @@ function Profile() {
     return (
         <div className="profileScreen">
             <Nav/>
+            
         <div className="profileScreen_body">
            <h1>Edit Profile</h1>
 
@@ -28,6 +29,13 @@ function Profile() {
         <div className="profile_plans">
             <h3>Plans</h3>
             <p>Renewal Date</p>
+
+        <div className="plan_details">
+        <p>Netflix Standard</p>
+        <button className="subscribe_button">Subscribe</button>
+        
+        </div>
+            
             <button
              onClick ={() => auth.signOut()}//auth coming from auth>firbase > imported above
              className="profile_signout">
